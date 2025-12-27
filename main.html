@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="node_modules/normalize.css">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -10,7 +10,7 @@
 </head>
 <body>
 <header id="header">
-    <img src="logo/Logo.svg" alt="logo">
+    <img  id="logo" src="logo/logo.svg" alt="logo">
     <nav id="menu">
         <ul>
             <li class="active">
@@ -27,7 +27,107 @@
             </li>
         </ul>
     </nav>
-    <button id="button">Get Started</button>
+    <button id="header-button">Get Started</button>
 </header>
+<button id="button-up" onclick="document.querySelector('#menu').scrollIntoView({behavior: 'smooth'});">
+    <img src="logo/arrow-down.svg" alt="arrow-down">
+</button>
+<div class="main">
+    <img class="main-img" src="logo/hero-3d.svg" alt="hero-3d">
+    <div class="main-elements">
+        <h1>Grow your subscription business</h1>
+        <p>Outcome-centered products that reduce churn, optimize pricing, and grow your subscription business end-to-end.</p>
+        <button id="button-main">Get Started</button>
+        <button id="button-down">
+            <img src="logo/arrow-down.svg" alt="arrow-down">
+        </button>
+    </div>
+</div>
+<div class="poster">
+    <img src="logo/logoipsum-1.svg" alt="logoipsum-1">
+    <img src="logo/logoipsum-2.svg" alt="logoipsum-1">
+    <img src="logo/logoipsum-3.svg" alt="logoipsum-1">
+    <img src="logo/logoipsum-4.svg" alt="logoipsum-1">
+    <img src="logo/logoipsum-5.svg" alt="logoipsum-1">
+</div>
+<div class="input">
+    <img src="logo/content-image-02.svg" alt="content-image-02">
+    <div class="input-elements">
+        <h3>Grow your subscription</h3>
+        <form class="input-form">
+<!--            <label for="location">Location</label>-->
+            <input id="location" type="text" placeholder="Location">
+<!--            <label for="type">Type</label>-->
+            <input id="type" type="text" placeholder="Type">
+<!--            <label for="date">Date</label>-->
+            <input id="date" type="date" placeholder="Date" value="2019-01-28">
+        </form>
+        <button>SEND</button>
+    </div>
+</div>
+<div class="metrics">
+    <img src="logo/content-metrics.svg" alt="Photo Metrics">
+    <div class="metrics-elements">
+        <h1>In-depth metrics</h1>
+        <p>Accurate, real-time reporting at your fingertips. Getting data has never been easier.</p>
+        <a href="#">Learn more</a>
+    </div>
+</div>
+<div class="icons">
+    <div class="icon-1">
+        <img src="logo/icon-001.svg" alt="Photo Card">
+        <h6>Benchmarks</h6>
+        <p>See how you stack up against comparable companies in similar stages.</p>
+    </div>
+    <div class="icon-2">
+        <img src="logo/icon-002.svg" alt="Photo Calculator">
+        <h6>Pricing Audit</h6>
+        <p>Benchmark the health of your monetization and pricing strategy.</p>
+    </div>
+    <div class="icon-3">
+        <img src="logo/icon-003.svg" alt="Photo Camera">
+        <h6>Retention Audit</h6>
+        <p>Audit where revenue leakage exists and where you can increase retention.</p>
+    </div>
+</div>
+<div class="pricing-text">
+    <h1>Get the right plan for future product.</h1>
+    <div class="pricing-buttons">
+        <button class="button-1">Yearly</button>
+        <button class="button-2">Monthly</button>
+    </div>
+</div>
+<div class="pricing-cards">
+    <div class="card-1">
+        <h6>Starter</h6>
+        <h1>Free</h1>
+        <ul>
+            <li>1 Website</li>
+            <li>5 GB Hosting</li>
+            <li>Limited Support</li>
+        </ul>
+        <button>Get Started</button>
+    </div>
+    <div class="card-2">
+        <h6>Premium</h6>
+        <h1>$29<span>/month</span></h1>
+        <ul>
+            <li>10 Website</li>
+            <li>15 GB Hosting</li>
+            <li>Premium Support</li>
+        </ul>
+        <button>Get Started</button>
+    </div>
+    <div class="card-3">
+        <h6>Enterprise</h6>
+        <h1>$49<span>/month</span></h1>
+        <ul>
+            <li>Unlimited Website</li>
+            <li>50 GB Hosting</li>
+            <li>Premium Support</li>
+        </ul>
+        <button>Get Started</button>
+    </div>
+</div>
 </body>
 </html>
