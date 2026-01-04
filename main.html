@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dist/style.css">
     <link rel="stylesheet" href="node_modules/normalize.css">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -10,8 +10,8 @@
 </head>
 <body>
 <header id="header">
-    <img  id="logo" src="logo/logo.svg" alt="logo">
-    <nav id="menu">
+    <img  id="logo" src="logo/logo.svg" alt="logo" aria-label="Brand logo">
+    <nav id="menu" role="menu" aria-label="Menu">
         <ul>
             <li class="active">
                 <a href="#">Home</a>
@@ -27,14 +27,14 @@
             </li>
         </ul>
     </nav>
-    <button id="header-button">Get Started</button>
+    <button id="header-button" aria-label="Start Work Button">Get Started</button>
 </header>
-<button id="button-up" onclick="document.querySelector('#menu').scrollIntoView({behavior: 'smooth'});">
+<button id="button-up" aria-label="Button, go up" onclick="document.querySelector('#menu').scrollIntoView({behavior: 'smooth'});">
     <img src="logo/arrow-down.svg" alt="arrow-down">
 </button>
 <div class="main">
-    <img class="main-img" src="logo/hero-3d.svg" alt="hero-3d">
-    <div class="main-elements">
+    <img class="main-img" src="logo/hero-3d.svg" alt="A person on a skateboard">
+    <div class="main-elements" >
         <h1>Grow your subscription business</h1>
         <p>Outcome-centered products that reduce churn, optimize pricing, and grow your subscription business end-to-end.</p>
         <button id="button-main">Get Started</button>
@@ -43,7 +43,7 @@
         </button>
     </div>
 </div>
-<div class="poster">
+<div class="poster" aria-label="Brand Posters" >
     <img src="logo/logoipsum-1.svg" alt="logoipsum-1">
     <img src="logo/logoipsum-2.svg" alt="logoipsum-1">
     <img src="logo/logoipsum-3.svg" alt="logoipsum-1">
@@ -51,8 +51,8 @@
     <img src="logo/logoipsum-5.svg" alt="logoipsum-1">
 </div>
 <div class="input">
-    <img src="logo/content-image-02.svg" alt="content-image-02">
-    <div class="input-elements">
+    <img src="logo/content-image-02.svg" alt="A person with a pencil">
+    <div class="input-elements" aria-label="Subscription Form">
         <h3>Grow your subscription</h3>
         <form class="input-form">
 <!--            <label for="location">Location</label>-->
@@ -66,14 +66,14 @@
     </div>
 </div>
 <div class="metrics">
-    <img src="logo/content-metrics.svg" alt="Photo Metrics">
-    <div class="metrics-elements">
+    <img src="logo/content-metrics.svg" alt="A person with a metrics">
+    <div class="metrics-elements" aria-label="Details about the metrics">
         <h1>In-depth metrics</h1>
         <p>Accurate, real-time reporting at your fingertips. Getting data has never been easier.</p>
         <a href="#">Learn more</a>
     </div>
 </div>
-<div class="icons">
+<div class="icons" aria-label="Recommendation cards">
     <div class="icon-1">
         <img src="logo/icon-001.svg" alt="Photo Card">
         <h6>Benchmarks</h6>
@@ -90,7 +90,7 @@
         <p>Audit where revenue leakage exists and where you can increase retention.</p>
     </div>
 </div>
-<div class="pricing-text">
+<div class="pricing-text" aria-label="Pricing Plan Options">
     <h1>Get the right plan for future product.</h1>
     <div class="pricing-buttons">
         <button class="button-1">Yearly</button>
